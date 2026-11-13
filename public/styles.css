@@ -131,3 +131,49 @@ img,svg{max-width:100%}
   .member-photo{width:68px;height:68px;font-size:21px}
 }
 @media(prefers-reduced-motion:reduce){.hero-actions .button-primary,.hero-actions .text-link{transition:none}}
+
+/* Botón de pago: acción principal clara, táctil y reconocible. */
+.payment-section .payment-button{min-height:58px;padding:0 23px;display:inline-flex;align-items:center;justify-content:center;gap:12px;border:1px solid #8bf2bd;border-radius:7px;background:linear-gradient(115deg,#0cac65 0%,#18c977 58%,#26d987 100%);color:#04170d;font-size:12px;font-weight:800;letter-spacing:.015em;box-shadow:0 9px 25px #0abd6c40,inset 0 1px #ffffff70;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+.payment-section .payment-button:hover{transform:translateY(-3px);box-shadow:0 14px 30px #0abd6c61,inset 0 1px #ffffff90;filter:saturate(1.08)}
+.payment-section .payment-button:active{transform:translateY(0);box-shadow:0 4px 12px #0abd6c30}
+.payment-section .payment-button:focus-visible{outline:3px solid #a4ffe0;outline-offset:4px}
+.payment-section .payment-button .whatsapp-mark{width:21px;height:21px;margin:0;stroke-width:2}
+@media(max-width:720px){.payment-section .payment-button{min-height:56px;padding-inline:18px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.payment-section .payment-button{transition:none}}
+
+/* Footer M.A: identidad, navegación y contacto con jerarquía clara. */
+.footer-pro{position:relative;overflow:hidden;background:radial-gradient(ellipse at 90% 0%,#1d2940 0%,transparent 39%),#080d15;color:#e8eef7;border-top:1px solid #253144}
+.footer-shell{max-width:1440px;margin:0 auto;padding:0 7.5%}
+.footer-upper{display:grid;grid-template-columns:1.35fr .8fr 1.15fr 1.05fr;gap:clamp(22px,4vw,58px);padding:58px 0 46px}
+.footer-identity .footer-brand{width:fit-content;gap:12px;font-size:17px;letter-spacing:.075em;color:#f3f7ff}
+.footer-identity .brand-mark{width:31px;height:31px}
+.footer-identity .brand-sub{font-size:7px;color:#8798b0}
+.footer-identity>p{max-width:280px;margin:22px 0 18px;color:#a4b1c4;font-size:11px;line-height:1.8}
+.footer-location{display:flex;align-items:center;gap:8px;color:#91a3bb;font-size:9px;letter-spacing:.04em}
+.footer-location svg{width:15px;height:15px;fill:none;stroke:#67e3ed;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding-top:5px}
+.footer-column h2{margin:0 0 7px;color:#f1f5fc;font:700 15px var(--display);letter-spacing:.01em}
+.footer-column a{color:#9eacc0;font-size:10px;line-height:1.55;transition:color .18s}
+.footer-column a:hover{color:#72e7f1}
+.footer-contact-links a span{display:block;margin-top:3px;color:#e3eaf3;font-size:10px;overflow-wrap:anywhere}
+.footer-cta-block{align-self:start;padding:19px 18px;border:1px solid #2d3d55;background:linear-gradient(145deg,#131d2c,#0e1521)}
+.footer-kicker{color:#70e4ee;font-size:7px;font-weight:800;letter-spacing:.14em}
+.footer-cta-block h2{margin:12px 0 8px;color:#f1f5ff;font:700 25px/1.05 var(--display);letter-spacing:-.025em}
+.footer-cta-block p{margin:0 0 17px;color:#a5b2c5;font-size:9px;line-height:1.7}
+.footer-cta{min-height:40px;padding:0 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #61dfe7;background:linear-gradient(110deg,#36dce8,#69bdf2);color:#07131d;font-size:9px;font-weight:800;transition:transform .18s,box-shadow .18s}
+.footer-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px #3cd6e833}
+.footer-cta svg,.footer-bottom>a svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.footer-pro .footer-bottom{min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid #222e40;color:#8291a7;font-size:8px;letter-spacing:.05em}
+.footer-bottom>a{display:inline-flex;align-items:center;gap:7px;color:#b7c4d5;transition:color .18s}
+.footer-bottom>a:hover{color:#6de5ed}
+@media(max-width:1050px){.footer-shell{padding-inline:5%}.footer-upper{grid-template-columns:1.2fr 1fr 1.2fr;gap:30px}.footer-cta-block{grid-column:1/-1;max-width:460px}}
+@media(max-width:720px){.footer-shell{padding-inline:20px}.footer-upper{grid-template-columns:1fr 1fr;gap:29px 22px;padding:41px 0 31px}.footer-identity,.footer-cta-block{grid-column:1/-1}.footer-identity>p{max-width:360px}.footer-cta-block{max-width:none}.footer-pro .footer-bottom{align-items:flex-start;flex-direction:column;justify-content:center;gap:10px;padding:15px 0;font-size:8px}.footer-bottom>a{min-height:36px}}
+@media(max-width:390px){.footer-upper{grid-template-columns:1fr}.footer-column{grid-column:1}.footer-identity,.footer-cta-block{grid-column:1}.footer-identity .footer-brand{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.footer-cta,.footer-column a,.footer-bottom>a{transition:none}}
+
+/* Botones de WhatsApp: mismo degradado y espacio consistente. */
+.payment-section .payment-button{margin:8px 0;min-height:58px;padding:0 24px;border:1px solid #8bf2ff;border-radius:7px;background:linear-gradient(105deg,#5be7ff,#a991ff);color:#080b14;box-shadow:0 10px 28px #55dff51c;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.payment-section .payment-button:hover{background:linear-gradient(105deg,#9af3ff,#c7b7ff);box-shadow:0 14px 34px #8a91ff30;transform:translateY(-2px)}
+.payment-section .payment-button .whatsapp-mark{color:inherit}
+@media(max-width:720px){.payment-section .payment-button{width:100%;margin:5px 0 2px;padding-inline:16px}}
+@media(prefers-reduced-motion:reduce){.payment-section .payment-button{transition:none}.payment-section .payment-button:hover{transform:none}}
