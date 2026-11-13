@@ -177,3 +177,11 @@ img,svg{max-width:100%}
 .payment-section .payment-button .whatsapp-mark{color:inherit}
 @media(max-width:720px){.payment-section .payment-button{width:100%;margin:5px 0 2px;padding-inline:16px}}
 @media(prefers-reduced-motion:reduce){.payment-section .payment-button{transition:none}.payment-section .payment-button:hover{transform:none}}
+
+/* Galería: encabezado de casos con presencia gamer y CTA destacado. */
+.gallery-page-toolbar h2{position:relative;width:fit-content;padding:0 0 12px;margin-top:12px;font-family:var(--display);font-size:clamp(30px,4vw,42px);font-weight:700;line-height:.95;letter-spacing:.025em;text-transform:uppercase;text-shadow:0 0 24px #5be7ff24}
+.gallery-page-toolbar h2::after{content:"";position:absolute;left:0;bottom:0;width:62%;height:3px;background:linear-gradient(90deg,#5be7ff,#a991ff,transparent);box-shadow:0 0 14px #5be7ff55}
+.gallery-contact .button-primary{margin:12px 0;padding:15px 24px;min-height:58px;border:1px solid #8bf2ff;border-radius:6px;box-shadow:0 10px 28px #55dff526;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.gallery-contact .button-primary:hover{transform:translateY(-2px);box-shadow:0 14px 34px #8a91ff3d}
+@media(max-width:720px){.gallery-contact .button-primary{margin:5px 0 2px;align-self:stretch;justify-content:space-between}.gallery-page-toolbar h2{font-size:32px}}
+@media(prefers-reduced-motion:reduce){.gallery-contact .button-primary{transition:none}.gallery-contact .button-primary:hover{transform:none}}
