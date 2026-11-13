@@ -1,5 +1,5 @@
 // ====== SUPABASE (pega aquí tus datos: Project Settings → API) ======
-const SUPABASE_URL='https://knjaxmfjeglbbhhgpdru.supabase.co/rest/v1/';
+const SUPABASE_URL='https://knjaxmfjeglbbhhgpdru.supabase.co';
 const SUPABASE_KEY='sb_publishable_j9ouZf_u7Utzqv8ZP7ZdWw_-oyBUhlT';
 async function sb(path,body,extra={}){const headers={apikey:SUPABASE_KEY,'Content-Type':'application/json',...extra};if(SUPABASE_KEY.startsWith('eyJ'))headers.Authorization='Bearer '+SUPABASE_KEY;const res=await fetch(SUPABASE_URL+'/rest/v1'+path,{method:'POST',headers,body:JSON.stringify(body)});const raw=await res.text();if(!res.ok){let detail={};try{detail=JSON.parse(raw)}catch{}throw new Error(detail.code==='23514'?'Revisa los datos: nombre de 2 a 48 letras, un correo válido y un comentario de al menos 8 caracteres.':'No se pudo completar la acción. Inténtalo de nuevo.')}return raw?JSON.parse(raw):null}
 async function sha256Hex(value){const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));return [...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('')}
