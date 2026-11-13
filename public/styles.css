@@ -109,3 +109,25 @@ img,svg{max-width:100%}
 .review-email{display:inline-block;width:fit-content;margin:8px 0 0;color:#76eaff;font-size:10px;overflow-wrap:anywhere}
 .review-email:hover{text-decoration:underline}
 @media(max-width:720px){.review-email-field{grid-column:1}.review-email{max-width:100%}}
+
+/* Inicio: CTA de alto contraste con acabado limpio y foco accesible. */
+.hero-actions{gap:14px;flex-wrap:wrap}
+.hero-actions .button-primary{min-height:56px;padding:0 24px;border:1px solid #8df7ff;border-radius:4px;background:linear-gradient(115deg,#36e6f5 0%,#68c9ff 52%,#8a7cff 100%);color:#07111c;font-size:12px;font-weight:800;letter-spacing:.025em;gap:22px;box-shadow:0 10px 28px #34dbee36,inset 0 1px #ffffff88}
+.hero-actions .button-primary:hover{transform:translateY(-3px);box-shadow:0 15px 34px #4adff45c,inset 0 1px #ffffffaa;filter:saturate(1.08)}
+.hero-actions .button-primary:focus-visible,.hero-actions .text-link:focus-visible{outline:3px solid #a9f7ff;outline-offset:4px}
+.hero-actions .text-link{min-height:48px;padding:0 16px;display:inline-flex;align-items:center;gap:12px;border:1px solid #41506a;border-radius:4px;background:linear-gradient(135deg,#151e30,#101725);color:#dceaff;font-size:11px;transition:transform .2s,border-color .2s,background .2s}
+.hero-actions .text-link:hover{transform:translateY(-2px);border-color:#64e8f5;background:#19253a}
+.hero-actions .text-link .ui-icon{color:#69eaf5}
+/* Retrato de técnicos con recorte y marco de avatar. */
+.team-members article{grid-template-columns:96px minmax(0,1fr);align-items:center}
+.member-photo{width:88px;height:88px;aspect-ratio:1;border-radius:50%;overflow:hidden;display:grid;place-items:center;border:2px solid #526180;box-shadow:0 0 0 5px #5be7ff0d,0 8px 24px #0004;background:linear-gradient(145deg,#263c5a,#392b5c);font-size:25px}
+.member-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:50%}
+.member-2{border-color:#796bb2}
+.label-icon{display:none}
+@media(max-width:720px){
+  .hero-actions{align-items:stretch;flex-direction:column;gap:10px}
+  .hero-actions .button-primary,.hero-actions .text-link{width:100%;justify-content:space-between;min-height:52px}
+  .team-members article{grid-template-columns:74px minmax(0,1fr);gap:14px}
+  .member-photo{width:68px;height:68px;font-size:21px}
+}
+@media(prefers-reduced-motion:reduce){.hero-actions .button-primary,.hero-actions .text-link{transition:none}}
