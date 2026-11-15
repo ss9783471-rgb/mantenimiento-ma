@@ -203,3 +203,18 @@ img,svg{max-width:100%}
 .device-model.is-rotating .device-stage{animation:model-tilt .85s cubic-bezier(.2,.75,.25,1)}
 @media(max-width:720px){.device-model{height:188px}.device-stage{height:160px}.device-stage img{max-height:166px}}
 @media(prefers-reduced-motion:reduce){.service-card,.device-stage,.device-model:hover .device-stage{transition:none}}
+
+/* Tarjetas de servicio: volumen 3D reactivo y acabado gamer premium. */
+.service-card{position:relative;overflow:hidden;border:1px solid #2a3850;border-radius:10px;background:linear-gradient(150deg,#182235 0%,#101725 58%,#0d1320 100%);box-shadow:inset 0 1px #ffffff0c,0 14px 30px #0003;transform:perspective(1100px) rotateX(var(--card-tilt-x,0deg)) rotateY(var(--card-tilt-y,0deg));transform-style:preserve-3d;transition:transform .22s cubic-bezier(.2,.75,.25,1),border-color .22s ease,box-shadow .22s ease,background .22s ease;will-change:transform}
+.service-card::after{content:"";position:absolute;z-index:0;inset:0;border-radius:inherit;pointer-events:none;opacity:0;background:radial-gradient(340px circle at var(--light-x,50%) var(--light-y,28%),#65eaff1c,transparent 70%);transition:opacity .25s ease}
+.service-card>*{position:relative;z-index:1}
+.service-card::before{z-index:2;pointer-events:none}
+.service-top{justify-content:flex-start}
+.device-model{height:184px;margin:9px 0 8px;perspective:1000px}
+.device-stage{height:152px;filter:drop-shadow(0 16px 14px #0008);transition:transform .4s cubic-bezier(.2,.75,.25,1),filter .4s cubic-bezier(.2,.75,.25,1)}
+.device-stage::before{content:"";position:absolute;z-index:-1;inset:8% 18% 5%;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,#55dcff20 0%,#8874ff12 43%,transparent 73%);filter:blur(15px);transform:translateZ(-28px)}
+.device-stage img{max-width:100%;max-height:164px;filter:drop-shadow(0 12px 11px #0007);transform:translateZ(28px);transition:transform .4s cubic-bezier(.2,.75,.25,1),filter .4s ease}
+@media(hover:hover){.service-card:hover{transform:perspective(1100px) rotateX(var(--card-tilt-x,0deg)) rotateY(var(--card-tilt-y,0deg)) translateY(-5px) scale(1.012);border-color:#5b80a9;box-shadow:inset 0 1px #ffffff16,0 22px 44px #0006}.service-card:hover::after{opacity:1}.service-card:hover .device-stage{transform:perspective(1000px) rotateX(3deg) rotateY(-5deg) translateY(-4px);filter:drop-shadow(0 21px 18px #0009)}.service-card:hover .device-stage img{transform:translateZ(44px) rotateY(-3deg) scale(1.045)}}
+@media(hover:none){.service-card:active{transform:scale(.992);border-color:#5b80a9}.device-model:active .device-stage{transform:perspective(1000px) rotateX(4deg) rotateY(7deg) translateY(-3px)}}
+@media(max-width:720px){.device-model{height:184px}.device-stage{height:152px}.device-stage img{max-height:164px}}
+@media(prefers-reduced-motion:reduce){.service-card,.device-stage,.device-stage img,.service-card::after{transition:none!important;will-change:auto}.service-card,.service-card:hover,.device-stage,.device-model.is-rotating .device-stage{transform:none!important;animation:none!important}}
