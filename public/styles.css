@@ -185,3 +185,8 @@ img,svg{max-width:100%}
 .gallery-contact .button-primary:hover{transform:translateY(-2px);box-shadow:0 14px 34px #8a91ff3d}
 @media(max-width:720px){.gallery-contact .button-primary{margin:5px 0 2px;align-self:stretch;justify-content:space-between}.gallery-page-toolbar h2{font-size:32px}}
 @media(prefers-reduced-motion:reduce){.gallery-contact .button-primary{transition:none}.gallery-contact .button-primary:hover{transform:none}}
+
+/* Evita que el estilo genérico de tarjetas recorte el texto de la galería. */
+.gallery-page .gallery-case.gallery-card{height:auto;min-height:0;overflow:visible}
+.gallery-page .gallery-case .case-info{height:auto;min-height:0;overflow:visible}
+@media(max-width:720px){.gallery-page .gallery-case .case-info p{display:block;overflow:visible;white-space:normal;line-height:1.7}}
