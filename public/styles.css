@@ -190,3 +190,16 @@ img,svg{max-width:100%}
 .gallery-page .gallery-case.gallery-card{height:auto;min-height:0;overflow:visible}
 .gallery-page .gallery-case .case-info{height:auto;min-height:0;overflow:visible}
 @media(max-width:720px){.gallery-page .gallery-case .case-info p{display:block;overflow:visible;white-space:normal;line-height:1.7}}
+
+/* Presentación de producto: profundidad, volumen y luz de estudio. */
+.service-card{background:linear-gradient(155deg,#171e2d 0%,#101622 60%,#0c111b 100%);border:1px solid #28354a;box-shadow:inset 0 1px #ffffff08,0 12px 28px #0002}
+.service-card:hover{background:linear-gradient(155deg,#1a2638 0%,#111a29 62%,#0e1420 100%);border-color:#4f6b91;box-shadow:inset 0 1px #ffffff0c,0 18px 36px #0004}
+.device-model{height:176px}
+.device-stage{height:150px;isolation:isolate;filter:drop-shadow(0 16px 13px #0008)}
+.device-stage::before{content:"";position:absolute;z-index:-1;left:19%;right:19%;top:12%;bottom:6%;border-radius:50%;background:radial-gradient(ellipse at 50% 52%,#70c9ff22 0%,#8c77ff11 42%,transparent 73%);filter:blur(12px);transform:translateZ(-24px)}
+.device-stage::after{bottom:2px;left:22%;width:56%;height:17px;background:radial-gradient(ellipse,#64dcff38 0%,#8068ff18 48%,transparent 76%);filter:blur(10px);transform:rotateX(72deg) translateZ(-18px)}
+.device-stage img{max-width:100%;max-height:158px;filter:drop-shadow(0 9px 9px #0005);transform:translateZ(24px)}
+.device-model:hover .device-stage,.device-model:focus-visible .device-stage{filter:drop-shadow(0 18px 19px #0009)}
+.device-model.is-rotating .device-stage{animation:model-tilt .85s cubic-bezier(.2,.75,.25,1)}
+@media(max-width:720px){.device-model{height:188px}.device-stage{height:160px}.device-stage img{max-height:166px}}
+@media(prefers-reduced-motion:reduce){.service-card,.device-stage,.device-model:hover .device-stage{transition:none}}
