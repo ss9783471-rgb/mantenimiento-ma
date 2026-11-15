@@ -233,3 +233,10 @@ img,svg{max-width:100%}
 .review-author b{overflow-wrap:anywhere}
 .review-card-top{gap:10px}
 @media(max-width:720px){.google-profile-connect{align-items:flex-start;flex-direction:column}.google-profile-button{width:100%}.google-photo-consent{width:100%}.review-author{gap:8px}.review-avatar,.review-avatar-fallback{width:34px;height:34px;flex-basis:34px}}
+
+/* Casilla de consentimiento táctil, sin heredar el tamaño de los campos del formulario. */
+.review-form-wrap .google-profile-connect .google-photo-consent{display:flex!important;align-items:center;gap:12px;width:100%;min-width:0;min-height:48px;margin:0;padding:10px 12px;border:1px solid #34445e;border-radius:7px;background:#0c1422;color:#e7edf8!important;font-size:12px!important;font-weight:500!important;line-height:1.4;cursor:pointer;touch-action:manipulation}
+.review-form-wrap .google-profile-connect .google-photo-consent input[type="checkbox"]{display:block!important;appearance:auto;width:20px!important;height:20px!important;min-width:20px;flex:0 0 20px;margin:0!important;padding:0!important;accent-color:#5be7ff;cursor:pointer}
+.review-form-wrap .google-profile-connect .google-photo-consent span{display:block;min-width:0;flex:1;overflow-wrap:anywhere;color:inherit;font-size:inherit;line-height:inherit}
+.review-form-wrap .google-profile-connect .google-photo-consent:focus-within{outline:2px solid #5be7ff;outline-offset:2px}
+@media(max-width:720px){.review-form-wrap .google-profile-connect .google-photo-consent{align-self:stretch;min-height:52px;padding:11px 12px}.review-form-wrap .google-profile-connect .google-photo-consent input[type="checkbox"]{width:22px!important;height:22px!important;min-width:22px;flex-basis:22px}}
