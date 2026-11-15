@@ -218,3 +218,18 @@ img,svg{max-width:100%}
 @media(hover:none){.service-card:active{transform:scale(.992);border-color:#5b80a9}.device-model:active .device-stage{transform:perspective(1000px) rotateX(4deg) rotateY(7deg) translateY(-3px)}}
 @media(max-width:720px){.device-model{height:184px}.device-stage{height:152px}.device-stage img{max-height:164px}}
 @media(prefers-reduced-motion:reduce){.service-card,.device-stage,.device-stage img,.service-card::after{transition:none!important;will-change:auto}.service-card,.service-card:hover,.device-stage,.device-model.is-rotating .device-stage{transform:none!important;animation:none!important}}
+
+/* Acceso Google y fotos de perfil en opiniones. */
+.google-profile-connect{grid-column:1/-1;display:flex;align-items:center;flex-wrap:wrap;gap:11px;padding:13px 15px;border:1px solid #34445e;border-radius:8px;background:linear-gradient(115deg,#121c2b,#101522)}
+.google-profile-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:0 15px;border:1px solid #465774;border-radius:6px;background:#f8fafc;color:#111827;font:700 11px var(--font);cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.google-profile-button svg{width:18px;height:18px;flex:0 0 18px}
+.google-profile-button:hover{transform:translateY(-1px);box-shadow:0 8px 20px #0005}
+.google-profile-connect>span{color:#a6b3c8;font-size:9px;line-height:1.5}
+.google-profile-connect .google-photo-consent{flex-basis:100%;margin-top:1px}
+.google-photo-consent input:disabled{opacity:.5;cursor:not-allowed}
+.review-author{display:flex;align-items:center;gap:10px;min-width:0}
+.review-avatar,.review-avatar-fallback{width:38px;height:38px;flex:0 0 38px;border:1px solid #50617c;border-radius:50%;object-fit:cover;background:#182338}
+.review-avatar-fallback{display:grid;place-items:center;color:#75eaff;font:700 15px var(--display)}
+.review-author b{overflow-wrap:anywhere}
+.review-card-top{gap:10px}
+@media(max-width:720px){.google-profile-connect{align-items:flex-start;flex-direction:column}.google-profile-button{width:100%}.google-photo-consent{width:100%}.review-author{gap:8px}.review-avatar,.review-avatar-fallback{width:34px;height:34px;flex-basis:34px}}
