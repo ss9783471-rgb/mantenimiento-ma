@@ -48,7 +48,7 @@
   ],
   "gallery": [
     {
-      "category": "consolas",
+      "category": "play5",
       "label": "PLAYSTATION 5 · MANTENIMIENTO",
       "title": "Mantenimiento de PlayStation 5",
       "description": "Cambio de metal líquido y limpieza de ventiladores.",
@@ -57,7 +57,7 @@
       "before": "/images/gallery-01-before.png"
     },
     {
-      "category": "consolas",
+      "category": "play4",
       "label": "PLAYSTATION 4 · MANTENIMIENTO",
       "title": "Mantenimiento de PlayStation 4",
       "description": "Cambio de pasta térmica y limpieza del sistema de disipación.",
@@ -65,7 +65,7 @@
       "after": "/images/gallery-02-after.jpg"
     },
     {
-      "category": "consolas",
+      "category": "play5",
       "label": "PLAYSTATION 5 · MANTENIMIENTO",
       "title": "Mantenimiento de PlayStation 5",
       "description": "Cambio de metal líquido y revisión de temperaturas y funcionamiento.",
@@ -73,7 +73,7 @@
       "after": "/images/gallery-03-after.jpg"
     },
     {
-      "category": "consolas",
+      "category": "play4",
       "label": "PLAYSTATION 4 · MANTENIMIENTO",
       "title": "Mantenimiento de PlayStation 4",
       "description": "Cambio de pasta térmica y revisión de temperaturas y puertos.",
@@ -81,18 +81,34 @@
       "after": "/images/gallery-04-after.jpg"
     },
     {
-      "category": "portatiles",
-      "label": "POR DEFINIR",
-      "title": "Por definir",
-      "description": "Por definir.",
-      "before": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=700&q=80",
-      "after": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80"
+      "category": "play4",
+      "label": "PLAYSTATION 4 · MANTENIMIENTO",
+      "title": "Mantenimiento de PlayStation 4",
+      "description": "Cambio de pasta térmica y revisión de temperaturas y puertos.",
+      "before": "/images/gallery-01-before.png",
+      "after": "/images/gallery-01-after.png"
+    },
+    {
+      "category": "play4",
+      "label": "PLAYSTATION 4 · MANTENIMIENTO",
+      "title": "Mantenimiento de PlayStation 4",
+      "description": "Cambio de pasta térmica y revisión de temperaturas y puertos.",
+      "before": "/images/gallery-02-before.png",
+      "after": "/images/gallery-02-after.jpg"
+    },
+    {
+      "category": "play5",
+      "label": "PLAYSTATION 5 · MANTENIMIENTO",
+      "title": "Mantenimiento de PlayStation 5",
+      "description": "Cambio de metal líquido, limpieza de ventiladores y revisión de temperaturas y funcionamiento.",
+      "before": "/images/gallery-03-before.jpg",
+      "after": "/images/gallery-03-after.jpg"
     },
     {
       "category": "pc",
-      "label": "POR DEFINIR",
-      "title": "Por definir",
-      "description": "Por definir.",
+      "label": "PC · MANTENIMIENTO",
+      "title": "Mantenimiento de PC",
+      "description": "Cambio de pasta térmica y revisión de temperaturas.",
       "before": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=700&q=80",
       "after": "https://images.unsplash.com/photo-1587202372616-b43abea06c2a?auto=format&fit=crop&w=700&q=80"
     }
