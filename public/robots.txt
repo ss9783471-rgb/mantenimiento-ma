@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mantenimiento-ma.vercel.app/sitemap.xml
